@@ -39,6 +39,19 @@ public class EmployeeService {
     // Delete Employee
     public boolean deleteEmployee(String name) {
         log.info("Searching and deleting the employee with name: {}", name);
-        return employeeList.removeIf(emp -> emp.getName().equalsIgnoreCase(name));
+        boolean isDeleted = employeeList.removeIf(emp -> emp.getName().equalsIgnoreCase(name));
+        if(isDeleted){
+            log.info("Employee deleted successfully: {}", name);
+        }else{
+            log.error("Failed to delete Employee - Not Found: {}", name);
+        }
+        return isDeleted;
+    }
+
+    public void testLogging() {
+        log.debug("This is a DEBUG message - visible in dev mode");
+        log.info("This is an INFO message - visible in all modes");
+        log.warn("This is a WARN message");
+        log.error("This is an ERROR message");
     }
 }
