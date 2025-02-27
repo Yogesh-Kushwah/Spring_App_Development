@@ -1,15 +1,16 @@
-package com.bridgelabz.employeepayrollapp.dto;
+package com.bridgelabz.employeePayrollApp.DTO;
 
-import jakarta.validation.constraints.NotEmpty;
-import lombok.Data;
+
+import jakarta.persistence.Entity;
+import lombok.*;
 
 @Data
+@Getter
+@Setter
+@AllArgsConstructor
 public class EmployeeDTO {
-    @NotEmpty(message = "Name cannot be empty")
     private String name;
-
-    private String gender;
-    private String department;
-
     private double salary;
+
 }
+
