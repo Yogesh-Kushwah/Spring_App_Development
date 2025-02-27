@@ -1,0 +1,175 @@
+2025-02-26 19:07:24 - c.b.e.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.2 with PID 15768 (C:\Users\sarve\Desktop\employeePayrollApp\employeePayrollApp\target\classes started by sarve in C:\Users\sarve\Desktop\employeePayrollApp)
+2025-02-26 19:07:24 - c.b.e.EmployeePayrollAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 19:07:25 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-26 19:07:25 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 JPA repository interfaces.
+2025-02-26 19:07:26 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-02-26 19:07:26 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 19:07:26 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-26 19:07:26 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 19:07:26 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2127 ms
+2025-02-26 19:07:26 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-26 19:07:27 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-26 19:07:27 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-02-26 19:07:27 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-26 19:07:27 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-02-26 19:07:28 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f6b57f2
+2025-02-26 19:07:28 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-26 19:07:28 - o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-26 19:07:29 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-26 19:07:29 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-26 19:07:29 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-26 19:07:30 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-02-26 19:07:30 - c.b.e.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 6.703 seconds (process running for 7.279)
+2025-02-26 19:07:35 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-26 19:07:35 - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-26 19:07:35 - o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-02-26 19:07:36 - c.b.e.service.EmployeeService - Employee Created: com.bridgelabz.employeePayrollApp.model.EmployeeModel@705b2d87 
+2025-02-26 19:08:57 - o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-26 19:08:57 - o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-02-26 19:08:57 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-26 19:08:57 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-02-26 19:08:57 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-02-26 19:09:01 - c.b.e.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.2 with PID 9648 (C:\Users\sarve\Desktop\employeePayrollApp\employeePayrollApp\target\classes started by sarve in C:\Users\sarve\Desktop\employeePayrollApp)
+2025-02-26 19:09:01 - c.b.e.EmployeePayrollAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 19:09:02 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-26 19:09:02 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 JPA repository interfaces.
+2025-02-26 19:09:03 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-02-26 19:09:03 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 19:09:03 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-26 19:09:03 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 19:09:03 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1847 ms
+2025-02-26 19:09:04 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-26 19:09:04 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-26 19:09:04 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-02-26 19:09:04 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-26 19:09:04 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-02-26 19:09:05 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d3930fe
+2025-02-26 19:09:05 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-26 19:09:05 - o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-26 19:09:06 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-26 19:09:06 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-26 19:09:06 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-26 19:09:07 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-02-26 19:09:07 - c.b.e.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.905 seconds (process running for 6.448)
+2025-02-26 19:09:09 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-26 19:09:09 - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-26 19:09:09 - o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-02-26 19:09:09 - c.b.e.c.EmployeePayrollController - Creating Employee: EmployeeDTO(name=aman, salary=20000.0)
+2025-02-26 19:09:09 - c.b.e.service.EmployeeService - Employee Created: com.bridgelabz.employeePayrollApp.model.EmployeeModel@70259201 
+2025-02-26 19:09:34 - o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-26 19:09:34 - o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-02-26 19:09:34 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-26 19:09:34 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-02-26 19:09:34 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-02-26 19:10:42 - c.b.e.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.2 with PID 21144 (C:\Users\sarve\Desktop\employeePayrollApp\employeePayrollApp\target\classes started by sarve in C:\Users\sarve\Desktop\employeePayrollApp)
+2025-02-26 19:10:42 - c.b.e.EmployeePayrollAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 19:10:43 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-26 19:10:43 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 JPA repository interfaces.
+2025-02-26 19:10:44 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-02-26 19:10:44 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 19:10:44 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-26 19:10:44 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 19:10:44 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1913 ms
+2025-02-26 19:10:44 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-26 19:10:44 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-26 19:10:44 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-02-26 19:10:44 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-26 19:10:44 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-02-26 19:10:45 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@145e958f
+2025-02-26 19:10:45 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-26 19:10:45 - o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-26 19:10:46 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-26 19:10:46 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-26 19:10:46 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-26 19:10:47 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-02-26 19:10:47 - c.b.e.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 6.033 seconds (process running for 6.6)
+2025-02-26 19:11:46 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-26 19:11:46 - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-26 19:11:46 - o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-02-26 19:11:46 - c.b.e.c.EmployeePayrollController - Creating Employee: EmployeeDTO(name=w, salary=20000.0)
+2025-02-26 19:11:46 - c.b.e.service.EmployeeService - Employee Created: com.bridgelabz.employeePayrollApp.model.EmployeeModel@6e163b7f 
+2025-02-26 19:13:12 - o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-02-26 19:13:28 - o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-26 19:13:28 - o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-02-26 19:13:28 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-26 19:13:28 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-02-26 19:13:28 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-02-26 19:14:29 - c.b.e.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.2 with PID 16180 (C:\Users\sarve\Desktop\employeePayrollApp\employeePayrollApp\target\classes started by sarve in C:\Users\sarve\Desktop\employeePayrollApp)
+2025-02-26 19:14:29 - c.b.e.EmployeePayrollAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 19:14:31 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-26 19:14:31 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 JPA repository interfaces.
+2025-02-26 19:14:31 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-02-26 19:14:31 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 19:14:31 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-26 19:14:31 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 19:14:31 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1899 ms
+2025-02-26 19:14:32 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-26 19:14:32 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-26 19:14:32 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-02-26 19:14:32 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-26 19:14:32 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-02-26 19:14:33 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@145e958f
+2025-02-26 19:14:33 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-26 19:14:33 - o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-26 19:14:34 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-26 19:14:34 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-26 19:14:34 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-26 19:14:35 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-02-26 19:14:35 - c.b.e.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.908 seconds (process running for 6.481)
+2025-02-26 19:14:40 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-26 19:14:40 - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-26 19:14:40 - o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-02-26 19:14:41 - o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-02-26 19:14:46 - c.b.e.c.EmployeePayrollController - Creating Employee: EmployeeDTO(name=w, salary=20000.0)
+2025-02-26 19:14:46 - c.b.e.service.EmployeeService - Employee Created: com.bridgelabz.employeePayrollApp.model.EmployeeModel@5b196b1c 
+2025-02-26 19:14:46 - c.b.e.c.EmployeePayrollController - Creating Employee: EmployeeDTO(name=w, salary=20000.0)
+2025-02-26 19:14:46 - c.b.e.service.EmployeeService - Employee Created: com.bridgelabz.employeePayrollApp.model.EmployeeModel@58c9af82 
+2025-02-26 19:14:46 - c.b.e.c.EmployeePayrollController - Creating Employee: EmployeeDTO(name=w, salary=20000.0)
+2025-02-26 19:14:46 - c.b.e.service.EmployeeService - Employee Created: com.bridgelabz.employeePayrollApp.model.EmployeeModel@65ee5ddf 
+2025-02-26 19:14:52 - c.b.e.c.EmployeePayrollController - Creating Employee: EmployeeDTO(name=q, salary=20000.0)
+2025-02-26 19:14:52 - c.b.e.service.EmployeeService - Employee Created: com.bridgelabz.employeePayrollApp.model.EmployeeModel@5904153e 
+2025-02-26 19:14:56 - c.b.e.c.EmployeePayrollController - Creating Employee: EmployeeDTO(name=x, salary=20000.0)
+2025-02-26 19:14:56 - c.b.e.service.EmployeeService - Employee Created: com.bridgelabz.employeePayrollApp.model.EmployeeModel@4f8b0b90 
+2025-02-26 19:15:08 - c.b.e.service.EmployeeService - Searching and deleting the employee with name: x
+2025-02-26 19:15:08 - c.b.e.c.EmployeePayrollController - Deleting Employee: x, Success: true
+2025-02-26 19:15:11 - c.b.e.service.EmployeeService - Searching and deleting the employee with name: x
+2025-02-26 19:15:11 - c.b.e.c.EmployeePayrollController - Deleting Employee: x, Success: false
+2025-02-26 19:15:54 - c.b.e.c.EmployeePayrollController - Updating Employee: x
+2025-02-26 19:15:54 - c.b.e.service.EmployeeService - Searching and updating the employee with name: y and salary: 20000.0
+2025-02-26 19:16:12 - c.b.e.c.EmployeePayrollController - Fetching all employees...
+2025-02-26 19:16:33 - c.b.e.c.EmployeePayrollController - Updating Employee: q
+2025-02-26 19:16:33 - c.b.e.service.EmployeeService - Searching and updating the employee with name: y and salary: 20000.0
+2025-02-26 19:16:49 - c.b.e.c.EmployeePayrollController - Fetching all employees...
+2025-02-26 19:16:59 - o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-26 19:16:59 - o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-02-26 19:16:59 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-26 19:16:59 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-02-26 19:16:59 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

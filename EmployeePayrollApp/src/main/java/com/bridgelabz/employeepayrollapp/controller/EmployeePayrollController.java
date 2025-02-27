@@ -4,6 +4,7 @@ package com.bridgelabz.employeePayrollApp.controller;
 import com.bridgelabz.employeePayrollApp.DTO.EmployeeDTO;
 import com.bridgelabz.employeePayrollApp.model.EmployeeModel;
 import com.bridgelabz.employeePayrollApp.service.EmployeeService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/employee")
+@Slf4j
 public class EmployeePayrollController {
     @Autowired
     private EmployeeService employeeService;
@@ -22,17 +24,20 @@ public class EmployeePayrollController {
     //UC-04
     @PostMapping("/create")
     public EmployeeModel createEmployee(@RequestBody EmployeeDTO employeeDTO) {
+        log.info("Creating Employee: {}", employeeDTO);
         return employeeService.createEmployee(employeeDTO);
     }
 
     @PutMapping("/update/{name}")
     public EmployeeModel updateEmployee(@PathVariable String  name, @RequestBody EmployeeDTO employeeDTO) {
+        log.info("Updating Employee: {}", name);
         return employeeService.updateEmployee(name,employeeDTO);
     }
 
     @DeleteMapping("/delete/{name}")
     public String deleteEmployee(@PathVariable String name) {
         boolean isDeleted = employeeService.deleteEmployee(name);
+        log.info("Deleting Employee: {}, Success: {}", name, isDeleted);
         return isDeleted ? "Employee deleted successfully" : "Employee not found";
     }
 
@@ -44,6 +49,7 @@ public class EmployeePayrollController {
     //UC-05
     @GetMapping("/all")
     public List<EmployeeModel> getAllEmployees() {
+        log.info("Fetching all employees...");
         return employeeService.getAllEmployees();
     }
 
