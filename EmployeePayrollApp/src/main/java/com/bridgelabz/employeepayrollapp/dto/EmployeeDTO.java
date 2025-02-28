@@ -1,4 +1,4 @@
-package com.bridgelabz.employeePayrollApp.DTO;
+package com.bridgelabz.employeepayrollapp.dto;
 
 
 import jakarta.persistence.Entity;
