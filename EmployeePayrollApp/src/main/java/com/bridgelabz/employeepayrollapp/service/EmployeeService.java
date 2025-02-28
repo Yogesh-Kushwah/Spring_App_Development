@@ -12,6 +12,7 @@ import java.util.List;
 @Slf4j
 public class EmployeeService {
 
+
     //Add employee to the list
     List<EmployeeModel> employeeList = new ArrayList<>();
     public EmployeeModel createEmployee(EmployeeDTO employeeDTO){
@@ -54,4 +55,7 @@ public class EmployeeService {
         log.warn("This is a WARN message");
         log.error("This is an ERROR message");
     }
+
+
+
 }
