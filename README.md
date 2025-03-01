@@ -189,3 +189,8 @@ logging.file.name=logs/app.log
 ## Step 4: Auto-Creation of Tables in MySQL
 - Enable Hibernate auto-DDL feature (`spring.jpa.hibernate.ddl-auto=update`).
 - Spring Boot automatically creates tables based on entity mappings.  
+
+
+## Section-5 UC-5 
+- **Created Custom Method for finding specific departments all employees** 
+- **@Query annotation used to create custom method in JPARepository**

@@ -44,6 +44,12 @@ public class EmployeeService {
 	   return employeeRepository.findAll();
     }
 
+    // Created a method to get employees of specific department
+    public List<Employee> getEmployeesByDepartment(String department) {
+	   return employeeRepository.findByDepartment(department);
+    }
+
+
     public EmployeeResponseDTO updateEmployee(Long id, @Valid  EmployeeRequestDTO updatedEmployee) {
 
 	   Employee employee = employeeRepository.findById(id).orElse(null);

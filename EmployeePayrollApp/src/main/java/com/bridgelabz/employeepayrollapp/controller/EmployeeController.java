@@ -7,6 +7,7 @@ import com.bridgelabz.employeepayrollapp.service.EmployeeService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -85,4 +86,11 @@ public class EmployeeController {
     public boolean deleteEmployee(@PathVariable Long id) {
         return employeeService.deleteEmployee(id);
     }
+
+    @GetMapping("/employees/{department}")
+    public ResponseEntity<List<Employee>> getEmployeesByDepartment(@PathVariable String department) {
+        List<Employee> employees = employeeService.getEmployeesByDepartment(department);
+        return ResponseEntity.ok(employees);
+    }
+
 }
