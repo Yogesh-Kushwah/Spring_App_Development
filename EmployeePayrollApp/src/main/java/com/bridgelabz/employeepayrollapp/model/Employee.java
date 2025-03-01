@@ -14,9 +14,12 @@ public class Employee {
 
     // Primary Key
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     // Employee name
     private double salary;
+
+    @Column(nullable = false)
     // Employee salary
     private String name;
     // Employee gender
@@ -25,12 +28,16 @@ public class Employee {
     //Employee note
     private String note;
 
+    @Column(nullable=false)
     // Employee startDate
     private LocalDate startDate;
 
     // Employee profilePic
     private String profilePic;
 
+    @ElementCollection
+    @CollectionTable(name = "employee_department", joinColumns = @JoinColumn(name = "employee_id"))
+    @Column(name = "department_name")
     // Employee department
     private List<String> department;
 
@@ -39,8 +46,7 @@ public class Employee {
     }
 
     // Parameterized Constructor to initialize the Employee details
-    public Employee(Long id , String name, double salary, String gender, String note, LocalDate startDate, String profilePic) {
-        this.id = id;
+    public Employee( String name, double salary, String gender, String note, LocalDate startDate, String profilePic) {
 	   this.name = name;
 	   this.salary = salary;
 	   this.gender = gender;

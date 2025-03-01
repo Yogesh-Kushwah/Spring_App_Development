@@ -171,4 +171,21 @@ logging.file.name=logs/app.log
 - **@PastOrPresent annotation to validate the date**
 - **@NotNull annotation to validate the date**
 
----
+--- 
+## Section-5 UC-4
+# Steps to Save Employee Payroll Data to MySQL DB
+
+## Step 1: Define Employee Payroll Model
+- Handle one-to-many relationships using `@ElementCollection` and `@CollectionTable`.
+
+## Step 2: Create Repository Interface
+- Define an interface extending `JpaRepository` to manage Employee Payroll records.
+- Spring Boot will auto-implement repository methods.
+
+## Step 3: Autowire Repository to Save Data
+- Inject the repository into the service layer using `@Autowired`.
+- Use `save()` method to store employee payroll data.
+
+## Step 4: Auto-Creation of Tables in MySQL
+- Enable Hibernate auto-DDL feature (`spring.jpa.hibernate.ddl-auto=update`).
+- Spring Boot automatically creates tables based on entity mappings.  

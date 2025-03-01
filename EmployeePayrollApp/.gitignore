@@ -41,5 +41,3 @@ build/
 .mvn/wrapper
 .mvn
 .mvn/wrapper/maven-wrapper.properties
-
-src/main/java/com/bridgelabz/employeepayrollapp/repository

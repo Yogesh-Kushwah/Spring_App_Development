@@ -9,6 +9,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Slf4j
 @RestController
 @RequestMapping("/employeepayrollservice")
@@ -22,7 +25,31 @@ public class EmployeeController {
         this.employeeService = employeeService;
     }
 
-    // GET Employee
+    // GET All employee
+
+    @GetMapping("/get")
+    public List<EmployeeResponseDTO> getEmployee(){
+
+        // make a call and  store all employee in Employee List
+        List<Employee> employeeData = employeeService.getAllEmployees();
+
+        // Create a List to Store the Employee Data and Convert in Response DTO
+        List<EmployeeResponseDTO> employeeResponseData = new ArrayList<>();
+        for(Employee empData : employeeData){
+            employeeResponseData.add( new EmployeeResponseDTO(
+                    empData.getName(),
+                    empData.getGender(),
+                    empData.getNote(),
+                    empData.getStartDate(),
+                    empData.getProfilePic(),
+                    empData.getDepartment()
+            ));
+        }
+        // returning the all employee
+        return employeeResponseData;
+    }
+
+    // GET Employee by Id
     @GetMapping("/getById/{id}")
     public EmployeeResponseDTO getEmployee(@PathVariable Long id) {
         log.info("Received GET request for Employee with ID: {}", id);
