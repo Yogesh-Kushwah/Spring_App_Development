@@ -1,10 +1,9 @@
 package com.bridgelabz.employeepayrollapp.dto;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Pattern;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import jakarta.validation.constraints.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.util.List;
 
 // DTO (Data Transfer Object) for Employee requests.
@@ -32,9 +31,11 @@ public class EmployeeRequestDTO {
     @NotEmpty(message = "Message Must have some key points")
     private String note;
 
-    @NotEmpty(message = "Start date cannot be empty")
-    @Pattern(regexp = "^\\d{2}-\\d{2}-\\d{4}$", message = "Start date must be in the format DD-MM-YYYY")
-    private String startDate;
+
+    @JsonFormat(pattern = "dd MMM yyyy")
+    @NotNull(message = "Start Date Should Not Be Empty!")
+    @PastOrPresent(message = "Start Date should be past or today's date")
+    public LocalDate startDate;
 
     @NotEmpty(message = "profilePic must have url of Image")
     private String profilePic;

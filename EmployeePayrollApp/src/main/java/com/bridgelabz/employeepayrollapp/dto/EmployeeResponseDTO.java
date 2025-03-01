@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.util.List;
 
 //DTO (Data Transfer Object) used to send employee details as a response.
@@ -18,7 +19,7 @@ public class EmployeeResponseDTO{
     private String name;
     private String gender;
     private String note;
-    private String startDate;
+    private LocalDate startDate;
     private String profilePic;
     private List<String> department;
 

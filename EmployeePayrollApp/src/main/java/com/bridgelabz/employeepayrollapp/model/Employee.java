@@ -2,6 +2,7 @@ package com.bridgelabz.employeepayrollapp.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Data
@@ -25,7 +26,7 @@ public class Employee {
     private String note;
 
     // Employee startDate
-    private String startDate;
+    private LocalDate startDate;
 
     // Employee profilePic
     private String profilePic;
@@ -38,7 +39,7 @@ public class Employee {
     }
 
     // Parameterized Constructor to initialize the Employee details
-    public Employee(Long id , String name, double salary, String gender, String note, String startDate, String profilePic) {
+    public Employee(Long id , String name, double salary, String gender, String note, LocalDate startDate, String profilePic) {
         this.id = id;
 	   this.name = name;
 	   this.salary = salary;
