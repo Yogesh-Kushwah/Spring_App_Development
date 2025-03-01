@@ -16,8 +16,9 @@ public class EmployeeService {
 
     private final List<Employee> employeeList = new ArrayList<>();
 
-    public Employee addEmployee(Employee employee) {
-
+    public Employee addEmployee(EmployeeRequestDTO employeeData) {
+        Employee employee = new Employee(employeeData.getId() ,employeeData.getName() , employeeData.getSalary() , employeeData.getGender() , employeeData.getNote() , employeeData.getStartDate(), employeeData.getProfilePic());
+	   employee.setDepartment(employeeData.getDepartment());
 	   log.debug("Creating a Employee With Name :{}", employee.getName());
 	   // Add employee to the list
 	   employeeList.add(employee);
@@ -45,7 +46,7 @@ public class EmployeeService {
     }
 
     public EmployeeResponseDTO updateEmployee(Long id, @Valid  EmployeeRequestDTO updatedEmployee) {
-	   Employee updatedEmployeeObject = new Employee(updatedEmployee.getId() , updatedEmployee.getName() , updatedEmployee.getSalary());
+	   Employee updatedEmployeeObject = new Employee(updatedEmployee.getId(),updatedEmployee.getName() , updatedEmployee.getSalary() , updatedEmployee.getGender() , updatedEmployee.getNote() , updatedEmployee.getStartDate() , updatedEmployee.getProfilePic());
 	   log.debug("Updating the Employee Whose id is {}" , id);
 	   // Find the employee with the given ID and update their details
 	   for (int i = 0; i < employeeList.size(); i++) {
@@ -54,7 +55,7 @@ public class EmployeeService {
 			 employeeList.set(i, updatedEmployeeObject);
 
 			 log.info("Successfully Employee Details Updated ......");
-			 return new EmployeeResponseDTO(updatedEmployee.getName() , updatedEmployee.getSalary());
+			 return new EmployeeResponseDTO(updatedEmployee.getName() , updatedEmployee.getGender() , updatedEmployee.getNote() , updatedEmployee.getStartDate() ,updatedEmployee.getProfilePic(), updatedEmployee.getDepartment());
 		  }
 	   }
 	   log.warn("No Employee Found With Id {} please check again...." , id);

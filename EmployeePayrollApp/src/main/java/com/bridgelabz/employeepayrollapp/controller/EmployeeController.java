@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/employeepayrollservice")
 public class EmployeeController {
 
-    private EmployeeService employeeService;
+    private final EmployeeService employeeService;
 
     // Injecting EmployeeService using @Autowired (Constructor Injection)
     @Autowired
@@ -30,7 +30,7 @@ public class EmployeeController {
         // Make a call to getEmployeeById and log the result
         Employee employee = employeeService.getEmployeeById(id);
 
-        EmployeeResponseDTO employeeDetails = new EmployeeResponseDTO( employee.getName() , employee.getSalary());
+        EmployeeResponseDTO employeeDetails = new EmployeeResponseDTO( employee.getName() ,  employee.getGender() , employee.getNote() , employee.getStartDate() , employee.getProfilePic() , employee.getDepartment());
 
         log.info("Returning Employee: {}", employee);
         return employeeDetails;
@@ -40,8 +40,9 @@ public class EmployeeController {
     @PostMapping("/create")
     public EmployeeResponseDTO addEmployee(@Valid  @RequestBody EmployeeRequestDTO employeeRequestDTO) {
         log.debug("Creating a EEmployee  with id {} ", employeeRequestDTO.getId());
-        Employee employee = employeeService.addEmployee( new Employee(employeeRequestDTO.getId() ,employeeRequestDTO.getName(), employeeRequestDTO.getSalary()));
-        EmployeeResponseDTO employeeDetails = new EmployeeResponseDTO( employee.getName() , employee.getSalary());
+        Employee employee = employeeService.addEmployee(employeeRequestDTO);
+        employee.setDepartment(employeeRequestDTO.getDepartment());
+        EmployeeResponseDTO employeeDetails = new EmployeeResponseDTO( employee.getName() , employee.getGender() , employee.getNote() , employee.getStartDate() , employee.getProfilePic(), employee.getDepartment());
         log.info("Successfully employee created {}" , employee);
         return employeeDetails;
     }

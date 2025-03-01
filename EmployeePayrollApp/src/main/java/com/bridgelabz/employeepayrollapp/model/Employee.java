@@ -1,8 +1,10 @@
 package com.bridgelabz.employeepayrollapp.model;
 import jakarta.persistence.*;
-import lombok.ToString;
+import lombok.Data;
 
-@ToString
+import java.util.List;
+
+@Data
 // Marks this class as a JPA entity
 @Entity
 // Specifies the table name in the database
@@ -16,42 +18,34 @@ public class Employee {
     private double salary;
     // Employee salary
     private String name;
+    // Employee gender
+    private String gender;
+
+    //Employee note
+    private String note;
+
+    // Employee startDate
+    private String startDate;
+
+    // Employee profilePic
+    private String profilePic;
+
+    // Employee department
+    private List<String> department;
 
     // Default Constructor for mapper
     public Employee() {
     }
 
     // Parameterized Constructor to initialize the Employee details
-    public Employee(Long id , String name, double salary) {
+    public Employee(Long id , String name, double salary, String gender, String note, String startDate, String profilePic) {
         this.id = id;
-        this.name = name;
-        this.salary = salary;
+	   this.name = name;
+	   this.salary = salary;
+	   this.gender = gender;
+	   this.note = note;
+	   this.startDate = startDate;
+	   this.profilePic = profilePic;
     }
 
-    // Getter and Setter for 'id'
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    // Getter and Setter for 'name'
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    // Getter and Setter for 'salary'
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
 }
