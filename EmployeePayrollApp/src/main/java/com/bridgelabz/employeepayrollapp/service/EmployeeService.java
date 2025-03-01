@@ -16,7 +16,7 @@ public class EmployeeService {
 
     private final List<Employee> employeeList = new ArrayList<>();
 
-    public Employee addEmployee(EmployeeRequestDTO employeeData) {
+    public Employee addEmployee(@Valid EmployeeRequestDTO employeeData) {
         Employee employee = new Employee(employeeData.getId() ,employeeData.getName() , employeeData.getSalary() , employeeData.getGender() , employeeData.getNote() , employeeData.getStartDate(), employeeData.getProfilePic());
 	   employee.setDepartment(employeeData.getDepartment());
 	   log.debug("Creating a Employee With Name :{}", employee.getName());

@@ -149,3 +149,17 @@ logging.file.name=logs/app.log
 - **Exception Handling:** Added `@ExceptionHandler` in `EmployeePayrollException` class to catch and handle the exception gracefully.
 - **Improved REST Responses:** Ensured that users receive meaningful error messages when querying non-existent Employee IDs.
 
+--- 
+
+## Section-5 UC-1 
+
+- **Adding Remaining Properties to EmployeePayrollDTO and Model**
+- **Created Custom ResponseDTO to not sharing the internal model and confidential detail with the client**
+
+
+---
+
+## Section-5 UC-2 
+- **Validation of EmployeeRequest Data on different Field like salary , startDate, gender etc.**
+- **@Valid Annotation and @Pattern for name Field Validation**
+
